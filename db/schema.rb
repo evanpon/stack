@@ -38,15 +38,15 @@ ActiveRecord::Schema.define(version: 20140118155840) do
   add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "questions", force: true do |t|
-    t.string   "title",           limit: 500
-    t.string   "content",         limit: 3000
-    t.integer  "accepted_answer"
-    t.integer  "user_id",                      null: false
+    t.string   "title",              limit: 500
+    t.string   "content",            limit: 3000
+    t.integer  "user_id",                         null: false
+    t.integer  "accepted_answer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "questions", ["accepted_answer"], name: "index_questions_on_accepted_answer", using: :btree
+  add_index "questions", ["accepted_answer_id"], name: "index_questions_on_accepted_answer_id", using: :btree
   add_index "questions", ["user_id"], name: "index_questions_on_user_id", using: :btree
 
   create_table "tags", force: true do |t|

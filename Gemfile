@@ -8,7 +8,7 @@ gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
+gem 'haml-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -40,6 +40,8 @@ end
 
 # Use Capistrano for deployment
 gem 'capistrano', group: :development
+gem 'capistrano-rails', group: :development
+gem 'capistrano-bundler', group: :development
 gem 'thin'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
