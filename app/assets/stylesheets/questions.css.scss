@@ -1,0 +1,23 @@
+#votes {
+  float: left;
+  margin-right: 3px;
+  padding: 5px;
+}
+#answers {
+  float: left;
+  margin-right: 3px;
+  padding: 5px;
+}
+.counts {
+  text-align: center;
+}
+#summary {
+  padding: 5px;
+}
+
+#question_summary {
+  border-bottom: 1px solid #aaa;
+  width: 500px;
+  margin: auto;
+  font-size: 1.5em;
+}

@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+
+#header {
+  height: 40px;
+  color: white;
+  background-color: black;
+}
+#search {
+  float: right;
+  margin: 10px 200px 0 0;
+}
+#user_heading {
+  float: left;
+  margin: 10px 0 0 200px;
+}
+div.clear {
+  clear: both;
+}

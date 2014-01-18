@@ -1,0 +1,14 @@
+#question_summary
+  #votes
+    .counts
+      = question.votes.count
+    %div
+      Votes
+  #answers
+    .counts
+      = question.answers.count
+    %div
+      Answers
+  #summary    
+    = link_to(question.title, question)
+  .clear
