@@ -1,8 +1,11 @@
-%h3
+%h2#question_title
   = @question.title
-%p
+
+%p#question_content
   = @question.content
-  
+
+%h3#answers_header
+  = "#{@question.answers.size - 1} Answers"  
 %ul
   = render partial: 'answer', collection: @question.answers
       

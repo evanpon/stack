@@ -32,7 +32,7 @@ div.clear {
   clear: both;
 }
 #header {
-/*  margin-top: 50px;*/
+  margin-bottom: 30px;
 }
 #header ul {
   float: left;
