@@ -8,20 +8,22 @@
   = "#{@question.answers.size - 1} Answers"  
 %ul
   = render partial: 'answer', collection: @question.answers
-      
-= form_for @answer do |f|
-  - if @answer.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@answer.errors.count, "error")} prohibited this question from being saved:"
-      %ul
-        - @answer.errors.full_messages.each do |msg|
-          %li= msg
-  .field
-    = f.label :content
-    = f.text_area :content
-  .field
-    = f.hidden_field :user_id, value: 1
-    = f.hidden_field :question_id
-  .form-actions
-    = f.submit nil
+ 
+#your_answer     
+  %h3
+    Your Answer
+  = form_for @answer do |f|
+    - if @answer.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@answer.errors.count, "error")} prohibited this question from being saved:"
+        %ul
+          - @answer.errors.full_messages.each do |msg|
+            %li= msg
+    .field
+      = f.text_area :content
+    .field
+      = f.hidden_field :user_id, value: 1
+      = f.hidden_field :question_id
+    .form-actions
+      = f.submit nil
   
