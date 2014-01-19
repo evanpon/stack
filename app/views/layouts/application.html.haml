@@ -23,18 +23,19 @@
         Search: 
         %input{type: 'text'}
     .clear
-    #header
-      %ul
-        %li.button
-          Questions
-        %li.button
-          Tags
-        %li.button
-          Users
-        %li.button
-          Unanswered
-      #ask_question.button
-        = link_to 'Ask Question', new_question_path
-    .clear
-    = yield
+    #container
+      #header
+        %ul
+          %li.button
+            Questions
+          %li.button
+            Tags
+          %li.button
+            Users
+          %li.button
+            Unanswered
+        #ask_question.button
+          = link_to 'Ask Question', new_question_path
+      .clear
+      = yield
     

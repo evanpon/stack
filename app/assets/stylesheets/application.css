@@ -11,7 +11,10 @@
  *= require_self
  *= require_tree .
  */
-
+#container {
+  width: 980px;
+  margin: 50px auto;
+}
 #nav_bar {
   height: 40px;
   color: white;
@@ -29,11 +32,10 @@ div.clear {
   clear: both;
 }
 #header {
-  margin-top: 50px;
+/*  margin-top: 50px;*/
 }
 #header ul {
   float: left;
-  margin-left: 300px;
 }
 #header ul li{
   list-style-image: none;
@@ -48,7 +50,6 @@ div.clear {
 }
 #ask_question {
   float: right;
-  margin-right: 300px;
 }
 a {
   text-decoration: none;
