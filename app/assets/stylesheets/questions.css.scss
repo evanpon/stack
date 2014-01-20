@@ -47,10 +47,10 @@ h2#question_title {
   border-bottom: 1px solid #bbb;
   padding-bottom: 5px;
 }
-p#question_content {
+p#question_text {
   margin-top: 30px;
   width: 680px;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 h3#answers_header {
   border-bottom: 1px solid #bbb;
@@ -97,4 +97,30 @@ input[type=submit] {
   h3 {
     margin-bottom: 20px;
   }
+}
+.votes {
+  float: left;
+  text-align: center; 
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 9.5px;
+    width: 41px;
+  }
+}
+.vote {
+  background-repeat: no-repeat;
+  display: block;
+  height: 25px;
+  margin: 0 9.5px;
+  width: 41px;  
+  text-indent: -9999px;
+}
+.up {
+  background-position: 0px -265px;
+  background-image: url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=6);
+}
+.down {
+  background-position: 0px -300px;
+  background-image: url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=6);
 }

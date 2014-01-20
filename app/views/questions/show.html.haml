@@ -1,8 +1,9 @@
 %h2#question_title
   = @question.title
-
-%p#question_content
-  = @question.content
+#question_content
+  = render partial: 'votes', locals: {object: @question}
+  %p#question_text
+    = @question.content
 
 %h3#answers_header
   = "#{@question.answers.size - 1} Answers"  

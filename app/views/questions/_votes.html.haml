@@ -1,0 +1,7 @@
+.votes
+  %div
+    = link_to('up vote', '/', :class => 'up vote')
+  %p
+    = object.votes.size
+  %div
+    = link_to('down vote', '/', :class => 'down vote')

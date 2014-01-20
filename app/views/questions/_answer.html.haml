@@ -1,4 +1,6 @@
 - unless answer.new_record?
   %li.answer
+    = render partial: 'votes', locals: {object: @question}
+    
     = answer.content
   
