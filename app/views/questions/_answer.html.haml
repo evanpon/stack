@@ -1,6 +1,6 @@
 - unless answer.new_record?
   %li.answer
-    = render partial: 'votes', locals: {object: @question}
+    = render partial: 'votes', locals: {object: answer}
     %p.answer_text
       = fn(answer.content)
     .clear
