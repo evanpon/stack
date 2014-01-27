@@ -12,6 +12,9 @@
  *= require_self
  *= require_tree .
  */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
 #container {
   width: 980px;
   margin: 50px auto;
@@ -55,7 +58,8 @@ div.clear {
 a {
   text-decoration: none;
 }
-.button a:visited {
+
+.button a:visited, a:link {
   color: white;
 }
 .button:hover {
