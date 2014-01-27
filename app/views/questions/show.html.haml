@@ -3,10 +3,10 @@
 #question_content
   = render partial: 'votes', locals: {object: @question}
   %p#question_text
-    = @question.content
+    = fn(@question.content)
 
 %h3#answers_header
-  = "#{@question.answers.size - 1} Answers"  
+  = pluralize(@question.answers.size - 1, 'Answer')  
 %ul
   = render partial: 'answer', collection: @question.answers
  
